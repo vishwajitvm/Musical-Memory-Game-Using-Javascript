@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Musical Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <canvas id="background"></canvas>
+    <div id="gameboard">
+      <button class="red"></button>
+      <button class="blue"></button>
+      <button class="green"></button>
+      <button class="yellow"></button>
+    </div>
+    <div id="controls">
+      <button id="startButton">Start Game</button>
+      <button id="practiceButton">Practice Mode</button>
+      <select id="instrumentPicker">
+        <option value="piano">Piano</option>
+        <option value="guitar">Guitar</option>
+        <option value="trumpet">Trumpet</option>
+      </select>
+      <button id="pianoButton">Piano</button>
+      <button id="guitarButton">Guitar</button>
+      <button id="trumpetButton">Trumpet</button>
+    </div>
+    <div id="info">
+      <p>Score: <span id="score">0</span></p>
+      <p>Time: <span id="timer">30</span></p>
+      <p id="message"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

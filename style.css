@@ -1,0 +1,197 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body background */
+  html {
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    margin: 0;
+    background-color: #00bfff;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    animation: wave 10s ease-in-out infinite;
+  }
+  
+  @keyframes wave {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 -135px;
+    }
+  }
+    
+  canvas#background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  #gameboard {
+    margin-top: 50px;
+  }
+  
+  #wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    z-index: -1;
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  
+  
+  /* Gameboard styles */
+  #gameboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  button {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: none;
+    border-radius: 50%;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .red {
+    background-color: #f44336;
+  }
+  
+  .blue {
+    background-color: #2196f3;
+  }
+  
+  .green {
+    background-color: #4caf50;
+  }
+  
+  .yellow {
+    background-color: #ffeb3b;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Button press effect */
+  button:active {
+    transform: scale(0.9);
+  }
+  
+  /* Control button styles */
+  #controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  button#startButton,
+  button#practiceButton {
+    margin: 0 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+  }
+  
+  button#startButton:hover,
+  button#practiceButton:hover {
+    background-color: #2196f3;
+  }
+  
+  button#startButton:active,
+  button#practiceButton:active {
+    transform: scale(0.95);
+  }
+  
+  #instrumentPicker {
+    margin: 0 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  button#pianoButton,
+  button#guitarButton,
+  button#trumpetButton {
+    margin: 0 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2196f3;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+  }
+  
+  button#pianoButton:hover,
+  button#guitarButton:hover,
+  button#trumpetButton:hover {
+    background-color: #4caf50;
+  }
+  
+  button#pianoButton:active,
+  button#guitarButton:active,
+  button#trumpetButton:active {
+    transform: scale(0.95);
+  }
+  
+  /* Info panel styles */
+  #info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #score,
+  #timer {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  #message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f44336;
+  }
+  
